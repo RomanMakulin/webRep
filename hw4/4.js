@@ -12,8 +12,19 @@ xxxx
 xxxxx
 */
 
-let detailMount = "";
-for (let i = 0; i < 20; i++) {
-    detailMount += "x";
-    console.log(detailMount);
+// let detailMount = "";
+// for (let i = 0; i < 20; i++) {
+//     detailMount += "x";
+//     console.log(detailMount);
+// }
+
+let isFinish = false;
+let counter = 0;
+
+while (counter <= 3 || isFinish === true) {
+    if (ddd === sss) {
+        isFinish = false;
+    } else {
+        sadadad
+    }
 }

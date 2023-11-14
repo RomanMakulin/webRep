@@ -15,21 +15,21 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-const arr = [];
-const newArr = [];
+// const arr = [];
+// const newArr = [];
 
-for (let i = 0; i < 5; i++) {
-    arr.push(Math.round(Math.random() * 10));
-}
+// for (let i = 0; i < 5; i++) {
+//     arr.push(Math.round(Math.random() * 10));
+// }
 
-console.log(arr);
-console.log(arr.reduce((partialSum, a) => partialSum + a, 0));
-console.log(Math.min(...arr));
+// console.log(arr);
+// console.log(arr.reduce((partialSum, a) => partialSum + a, 0));
+// console.log(Math.min(...arr));
 
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 3) {
-        newArr.push(i)
-    }
-}
-console.log(newArr);
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 3) {
+//         newArr.push(i)
+//     }
+// }
+// console.log(newArr);
