@@ -1,38 +1,21 @@
-// const divEl = document.createElement('div');
-// document.body.appendChild(divEl);
+let checkboxEl = document.createElement('input');
+checkboxEl.type = 'checkbox';
 
+let spanEl = document.createElement('p');
+spanEl.innerHTML = 'Согласен с условиями';
 
-// let count = prompt('Введите число приветствий: ');
+let btnEl = document.createElement('button');
+btnEl.innerHTML = 'Отправить';
 
-// for (let i = 0; i < count; i++) {
-//     const pEl = document.createElement('p');
-//     pEl.innerHTML = 'Hello World';
-//     pEl.setAttribute('class', 'test');
-//     divEl.appendChild(pEl);
-// }; // СОЗДАНИЕ ЭЛЕМЕНТОВ И ДОБАВЛЕНИЕ НА СТРАНИЦУ С ИЗМЕНЕНИЕМ СТИЛЕЙ
+const container = document.querySelector('.container');
+container.appendChild(checkboxEl);
+container.appendChild(spanEl);
+container.appendChild(btnEl);
 
-// const listLi = document.getElementsByClassName('list__item');
-// [...listLi].forEach(element => {
-//     console.log(element);
-// });
-
-const users = [{
-        name: 'Roman',
-        age: 25
-    },
-    {
-        name: 'Olga',
-        age: 40
-    },
-    {
-        name: 'Ann',
-        age: 23
-    },
-    {
-        name: 'Milka',
-        age: 2
-    },
-];
-
-const ages = users.map(user => user.age);
-console.log(ages);
+btnEl.addEventListener('click', (e) => {
+    if (!checkboxEl.checked) {
+        let spanE2 = document.createElement('p');
+        spanE2.innerHTML = 'Согласен с условиями';
+        container.appendChild(spanE2);
+    }
+});
