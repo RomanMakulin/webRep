@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.item {
+    background-color: rgb(155, 154, 154);
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 0 0 2px black;
+    margin: 30px;
+    width: 200px;
+}
+
+.name {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.desc {
+    color: white;
+    margin-bottom: 5px;
+}
