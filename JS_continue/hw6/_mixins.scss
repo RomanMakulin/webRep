@@ -1,0 +1,6 @@
+@mixin fontStyle($colorStyle, $sizeStyle, $weightStyle) {
+    color: $colorStyle;
+    font-family: Lato;
+    font-size: $sizeStyle;
+    font-weight: $weightStyle;
+}

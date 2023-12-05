@@ -1,0 +1,45 @@
+@import "_mixins.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item {
+        width: 300px;
+        &_img {
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+        &_title {
+            margin: 0 0 16px 16px;
+            @include fontStyle(#000, 13px, 400);
+        }
+        &_text {
+            margin: 0 0 16px 16px;
+            @include fontStyle(#5D5D5D, 14px, 300);
+        }
+        &_price {
+            margin: 0 0 24px 16px;
+            @include fontStyle(#F16D7F, 16px, 400);
+        }
+    }
+    &_title {
+        @include fontStyle(#222, 30px, 400);
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    &_subTitle {
+        @include fontStyle(#9F9F9F, 14px, 400);
+        width: 100%;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+}
