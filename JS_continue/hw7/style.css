@@ -1,9 +1,12 @@
 .media-player {
-    background-color: white;
+    /* background-color: rgba(224, 255, 255, 0.26); */
+    background-image: url(./img/4931029.jpg);
+    background-size: cover;
     width: 600px;
     border-radius: 20px;
     box-shadow: 0 0 2px black;
     margin: 0 auto;
+    margin-top: 25vh;
 }
 
 .video {
@@ -18,13 +21,37 @@
 .video__play {
     background-image: url(./img/play.png);
     background-size: contain;
-    margin: 0 auto;
-    width: 20px;
-    height: 20px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.video__fullScreen {
+    background-image: url(./img/full-screen.png);
+    background-size: contain;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.video__stop {
+    background-image: url(./img/pause.png);
+    background-size: contain;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
 }
 
 .video__menu {
     display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
     gap: 10px;
     padding-bottom: 10px;
+}
+
+.video__menu__left {
+    display: flex;
+    gap: 10px;
 }
