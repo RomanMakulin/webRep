@@ -1,0 +1,30 @@
+.media-player {
+    background-color: white;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px black;
+    margin: 0 auto;
+}
+
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.video__play {
+    background-image: url(./img/play.png);
+    background-size: contain;
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+}
+
+.video__menu {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
