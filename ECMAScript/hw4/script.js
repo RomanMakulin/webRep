@@ -36,3 +36,24 @@ try {
 } catch (error) {
     console.log("Error");
 }
+
+// hw 2
+
+const url2 = "https://dog.ceo/api/breeds/image/random";
+
+try {
+    const bodyEl = document.querySelector(".dogs");
+    const timeoutPromise = (timeout) => new Promise((resolve) => setTimeout(resolve, timeout));
+
+    for (let i = 0; i < 10; i++) {
+
+        const data = await getData(url2);
+        let dog = document.createElement("img");
+        dog.src = data.message;
+        bodyEl.appendChild(dog);
+
+        await timeoutPromise(3000); // ждем 3 сек перед новой собачкой
+    }
+} catch (error) {
+    console.log("Error");
+}
