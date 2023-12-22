@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container-item {
+    background-color: rgb(253, 238, 253);
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 0 2px 0px black;
+    transition: 0.3s;
+}
+
+.container-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 3px 0px rgb(52, 0, 194);
+}
+
+.container-item__name {
+    font-weight: bold;
+    color: blue;
+}
+
+.container-item__delete {
+    color: gray;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.container-item__delete:hover {
+    color: rgb(132, 0, 255);
+}
